@@ -34,7 +34,7 @@ while (True):
                 if msg.type in ["note_on", "note_off", "control_change"]:
                     # print(msg)
                     msg.channel = 0
-                # print(msg)
+                print(msg)
                 port.send(msg)
     except:
         print("file not found!")
